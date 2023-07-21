@@ -1,0 +1,11 @@
+Resources:
+  Function:
+    Type: AWS::Serverless::Function
+    Properties:
+      Timeout: 300
+      MemorySize: 128
+      Handler: aws.pragma.crud.ProductLambdaHandler
+      CodeUri: C:\Users\david.zuluaga_pragma\Downloads\crud
+      Runtime: java17
+      Architectures:
+        - x86_64
